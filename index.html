@@ -10,13 +10,11 @@
         <link rel="stylesheet" href="reset.css">
         
         <!--CSS Externo-->
-        <link rel="stylesheet" href="style.css">
-
+        <link rel="stylesheet" href="style.css">   
     </head>
     <!-- HTML não tem pescoço-->
  <body>
     <header>
-        
         <ul>
             <li> <a href="#SobreMim">Sobre mim</a></li>
             <li> <a href="#FormacaoAcademica">Formação Acadêmica</a></li>
@@ -31,7 +29,7 @@
     </header>
     
     <section id="SobreMim"> 
-        <h1>SOBRE MIM</h1>
+        <h1 class="titulo-secao">SOBRE MIM</h1>
             <p>
                 Me chamo Júlia Polycarpo Cardozo, tenho 16 anos e atualmente estou cursando o Ensino Médio no SESI, juntamente com o Ensino Técnico em Análise e Desenvolvimento de Sistemas no SENAI, em São Paulo.
                 Além disso, sou integrante do grupo de Robótica MecaChonos, onde tive a oportunidade de desenvolver habilidades em mecatrônica, eletroeletrônica, programação e, especialmente, em trabalho em equipe.
@@ -40,40 +38,118 @@
     </section>
 
     <section id="FormacaoAcademica">
-        <h2>Formação Acadêmica</h2>
+        <h2 class="titulo-secao">Formação Acadêmica</h2>
+        <div class="cards-coluna"> 
+           
             <ul class="a">
-                <li>Ensino Fundamental: Concluído</li>
-                <li>Ensino Médio: Cursando (Previsão de conclusão: 2026)</li>
-                <li>Ensino Técnico em Análise e Desenvolvimento de Sistemas: Cursando (Previsão de conclusão: 2026)</li>
-                <li>Integrante de uma equipe de Robótica: Atuação nas áreas de mecânica e programação, com participação na FIRST Robotics Competition.</li>
-                <li>Curso Python- Germinare TECH: Concluído (Duração: 3 meses)</li>
-                <li>Pacote Office: Intermediário</li>
             </ul>
+            <ul class="card">
+                <li class="titulo-card">Ensino Médio</li>
+                <li class="instituicao-card">Sesi Vila Leopoldina</li>
+                <li class="ano-card">Cursando: conclusão: 2026</li>
+            </ul>
+
+            <ul class="card">
+                <li class="titulo-card">Técnico em Análise e Desenvolvimento de Sistemas</li>
+                <li class="instituicao-card">SENAI "Conde José Vicente de Azevedo"</li>
+                <li class="ano-card">Cursando: conclusão: 2026</li>
+            </ul>
+            <ul class="card">
+                <li class="titulo-card">Integrante de uma equipe de Robótica: Mecânica e Programação </li>
+                <li class="instituicao-card">SENAI "Mariano Ferraz"</li>
+                <li class="ano-card">Cursando: conclusão: 2026</li>
+            </ul>
+
+            <ul class="card">
+                <li class="titulo-card">Curso Python</li>
+                <li class="instituicao-card">Instituto J&F</li>
+                <li class="ano-card">Concluído: 2023</li>
+            </ul>
+        </div>
+
+            
+
     </section>
 
     <section id="HardSkills">
-        <h2>Hard Skills</h2>
-            <p>Possuo conhecimentos em programação, adquiridos por meio da formação técnica em Análise e Desenvolvimento de Sistemas,
-            onde aprofundei minhas habilidades em desenvolvimento de software. Tenho também experiência prática em mecatrônica e eletroeletrônica, 
-            aplicadas no desenvolvimento de projetos de robótica, nas quais atuo nas áreas de mecânica e programação como integrante da equipe MecaChonos. 
-            Além disso, sou capacitada no uso do Pacote Office, o que me permite trabalhar de forma eficiente com ferramentas como Word, Excel e PowerPoint. 
-            Minha experiência também inclui trabalho em equipe, uma habilidade que desenvolvi e aprimorei ao longo da minha participação em competições de robótica, 
-            como a FIRST Robotics Competition.</p>
+        <h2 class="titulo-secao">Hard Skills</h2>
+        <div class="cards-linha"> 
+            
+            <ul class="card">
+                <li class="emoji-card">💻</li>
+                <li class="nome-card">Programação</li>
+                <li class="descricao-card"> Conhecimento adquirido na formação técnica em Análise e Desenvolvimento de Sistemas, com foco em desenvolvimento de software.</li>
+            </ul>
+    
+            <ul class="card">
+                <li class="emoji-card">⚙️💡</li>
+                <li class="nome-card">Mecatrônica e Eletroeletrônica</li>
+                <li class="descricao-card"> Experiência prática em projetos de robótica, atuando nas áreas de mecânica e programação como parte da equipe MecaChronos.</li>
+            </ul>
+    
+            <ul class="card">
+                <li class="emoji-card">📄</li>
+                <li class="nome-card">Pacote Office</li>
+                <li class="descricao-card"> Uso eficiente de Word, Excel e PowerPoint para produção de documentos, planilhas e apresentações.</li>
+
+            </ul>
+    
+            <ul class="card">
+                <li class="emoji-card">👩🏾👱🏼‍♀️👨🏿🧔🏻</li>
+                <li class="nome-card">Trabalho em Equipe</li>
+                <li class="descricao-card"> Habilidade desenvolvida em competições como a FIRST Robotics Competition, promovendo colaboração e comunicação eficaz.</li>
+                
+            </ul>
+    
+        </div>
     </section>
 
     <section id="SoftSkills">
-        <h2>Soft Skills</h2>
-        <nav>
-            <ul class="a">
-                <li>Autoconsciência</li>
-                <li>Comunicação eficaz</li>
-                <li>Pensamento crítico</li>
-                <li>Trabalho em equipe</li>
-                <li>Adaptabilidade</li>
-                <li>Integridade</li>
-                <li>Responsabilidade</li>
+        <h2 class="titulo-secao">Soft Skills</h2>
+         <div class="cards-coluna">
+             <ul class="card">
+                 <li class="qualidade-card">Comunicação eficaz</li>
+                 <li class="descricao-card">Transmitir ideias com clareza, escutando ativamente e se adaptando ao público.</li>
+                </ul>
+                
+                <ul class="card">
+                    <li class="qualidade-card">Pensamento crítico</li>
+                    <li class="descricao-card">Analisar situações de forma lógica para tomar decisões embasadas.</li>
+                </ul>
+                
+                <ul class="card">
+                    <li class="qualidade-card">Trabalho em equipe</li>
+                    <li class="descricao-card">Colaborar com outras pessoas para alcançar objetivos em comum, como nas competições de robótica e trabalhos escolaes.</li>
+                </ul>
+                
+                <ul class="card">
+                    <li class="qualidade-card">Adaptabilidade</li>
+                    <li class="descricao-card">Capacidade de se ajustar rapidamente às mudanças e novos desafios.</li>
+                </ul>
+                
+                <ul class="card">
+                   <li class="qualidade-card">Criatividade</li>
+                   <li class="descricao-card">Propor ideias novas, inovar processos e sair do básico.</li>
+               </ul>
+
+                <ul class="card">
+                    <li class="qualidade-card">Autoconsciência</li>
+                    <li class="descricao-card">Reconhecer e entender minhas emoções e comportamentos para melhorar minha atuação.</li>
+                </ul>
+
+                <ul class="card">
+                   <li class="qualidade-card">Liderança</li>
+                   <li class="descricao-card">Mesmo sem estar em cargo de liderança, saber motivar, organizar e orientar outras pessoas conta muitos pontos</li>
+               </ul>
+               
+            <ul class="card">
+                <li class="qualidade-card">Integridade</li>
+                <li class="descricao-card">Agir com honestidade, ética e responsabilidade em todas as situações.</li>
             </ul>
-        </nav>
+
+
+
+        </div>
     </section>
 
     <section id="MeusProjetos">
@@ -108,12 +184,12 @@
         <ul class="a">
             <li><a href="https://github.com/JuliaPolycarpo" title="Acesse o meu portifólio GitHub" target="_blank">Acesse o meu GitHub</a> </li>
             <li><a href="https://br.linkedin.com/" title="Acesse o meu perfil no Linkedin" target="_blank">Acesse o meu Linkedin</a> </li>
-            <li><a href="https://br.linkedin.com/" title="Acesse o meu perfil no Instagram" target="_blank">Acesse o meu Instagram</li>
-            <li><a href="https://br.linkedin.com/" title="Acesse o meu perfil no TikTok" target="_blank">Acesse o meu TikTok</li>   
+            <li><a href="https://br.linkedin.com/" title="Acesse o meu perfil no Instagram" target="_blank">Acesse o meu Instagram</a></li>
+            <li><a href="https://br.linkedin.com/" title="Acesse o meu perfil no TikTok" target="_blank">Acesse o meu TikTok</a></li>   
         </ul>
-
-        <p>Desenvolvido por Júlia Polycarpo! 💻</p>
     </footer>
- </body>
+    <p>Desenvolvido por Júlia Polycarpo! 💻</p>
+
+</body>
 </html>
  
