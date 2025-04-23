@@ -23,18 +23,20 @@
             <li> <a href="#MeusProjetos">Meus Projetos </a></li>
             <li> <a href="#MeusArtigos">Meus Artigos</a></li>
             <li> <a href="#Contato">Contato</a></li>
-            
-
+            <li> <a href="#RedesSociais">Redes Sociais</a></li>
+            <li><span id="botao-tema">🔦</span></li>
+            <li><span id="botao-contraste">👓</span></li>
         </ul>
+        
     </header>
     
     <section id="SobreMim"> 
         <h1 class="titulo-secao">SOBRE MIM</h1>
+        <img class="foto-julia" src="ftjulia.jpg" alt="Imagem aleatória proposta pelo GitHub para o perfil." title="Imagem aleatória proposta pelo GitHub para o perfil"> 
             <p>
                 Me chamo Júlia Polycarpo Cardozo, tenho 16 anos e atualmente estou cursando o Ensino Médio no SESI, juntamente com o Ensino Técnico em Análise e Desenvolvimento de Sistemas no SENAI, em São Paulo.
                 Além disso, sou integrante do grupo de Robótica MecaChonos, onde tive a oportunidade de desenvolver habilidades em mecatrônica, eletroeletrônica, programação e, especialmente, em trabalho em equipe.
             </p>
-        <img class="foto-julia" src="ftjulia.jpg" alt="Imagem aleatória proposta pelo GitHub para o perfil." title="Imagem aleatória proposta pelo GitHub para o perfil"> 
     </section>
 
     <section id="FormacaoAcademica">
@@ -180,7 +182,48 @@
     
 
     <section id="MeusArtigos">
-        <h2>Meus Artigos</h2>
+        <h2 class="titulo-secao">Meus Artigos</h2>
+        <div class="artigos cards-linha">
+            <article>
+                <header>
+                <h3 class="card-titulo">Portifólio Profissional Usando GitHub Pages</h3>
+                <span class="data-publicacao">15 abr 2025</span>
+                <span class="autor">Júlia Polycarpo</span>
+                </header>
+                <p>Crie e publique seu portifólio profissional usando GitHub Pages, uma manira fácil e gratuita de mostrar seus projetos e habilidades.</p>
+                <footer>
+                    <button type="button" class="botao botao-continue">Continue lendo</button>
+                    <button type="button" class="botao botao-compartilhar">Compartilhar</button>
+                </footer>
+            </article>
+            
+            <article>
+                <header>
+                <h3 class="card-titulo">Conheça os Valores FIRST</h3>
+                <span class="data-publicacao">17 jun 2024</span>
+                <span class="autor">Júlia Polycarpo</span>
+                </header>
+                <p>Conheça valores importantes para seu crescimeto pessoal e profissional.</p>
+                <footer>
+                    <button type="button" class="botao botao-continue">Continue lendo</button>
+                    <button type="button" class="botao botao-compartilhar">Compartilhar</button>
+                </footer>
+            </article>
+
+            <article>
+                <header>
+                <h3 class="card-titulo">Aprendendo Python com Guanabara</h3>
+                <span class="data-publicacao">22 nov 2023</span>
+                <span class="autor">Júlia Polycarpo</span>
+                </header>
+                <p>Aprenda a programar rapidamente python com as aulas gratuitas do canal "Curso em Vídeo" com o professor Guanabara .</p>
+                <footer>
+                    <button type="button" class="botao botao-continue">Continue lendo</button>
+                    <button type="button" class="botao botao-compartilhar">Compartilhar</button>
+                </footer>
+            </article>
+        </div>
+
     </section>
 
     <section id="Contato">
@@ -219,6 +262,33 @@
     </footer>
     <br>
     <p style="text-align: center;">Desenvolvido por Júlia Polycarpo! 💻</p>
+
+    <script>
+        document.querySelector('#botao-tema').addEventListener('click', trocartema);
+
+        function trocartema(){
+            const root = document.documentElement;
+            if (root.getAttribute('data-theme') === 'white'){
+                root.removeAttribute('data-theme');
+            } else{
+                root.setAttribute('data-theme', 'white');
+            }
+        }
+    </script>
+
+<script>
+        document.querySelector('#botao-contraste').addEventListener('click', trocaContraste);
+
+        function trocaContraste(){
+            const root = document.documentElement;
+            if (root.getAttribute('data-theme') ==='autocontraste') {
+            root.removeAttribute('data-theme');
+            } else {
+             root.setAttribute('data-theme', 'autocontraste');
+             }
+        }
+</script>
+    
 
 </body>
 </html>
